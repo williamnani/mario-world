@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/download__3_-removebg-preview.png" type="image/x-icon">
+    <title>Super Mario</title>
+  </head>
+  <body>
+    <div class="box-header">
+      <img
+        src="./img/download__3_-removebg-preview.png"
+        alt="logo-mario-header"
+      />
+      <a href="">Home</a>
+      <a href="">Serviços</a>
+      <a href="">Fale Conosco</a>
+    </div>
+
+    <div class="box-principal">
+      <div class="box">
+        <img src="./img/logo.png" alt="logo do mario bros" />
+        <p class="paragraph-one">
+          🔧Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!🔧
+        </p>
+        <p class="paragraph-second">
+          Você já se encontrou em uma situação de emergência com encanamento?
+          Vazamentos inesperados, canos entupidos ou torneiras que não param de
+          pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+          Apresentamos a vocês os encanadores mais famosos do Reino dos
+          Cogumelos - Mario e Luigi!
+        </p>
+        <button class="btn-click btn-efeito" onclick="cliqueiNoBotao()">
+          ENTRE EM CONTATO
+        </button>
+      </div>
+      <div class="box-2">
+        <img
+          src="./img/mario.png"
+          alt="logo mario e luigi"
+          class="logo-mario-luigi"
+        />
+      </div>
+    </div>
+    <div class="box-video">
+      <video src="./img/video.mp4" autoplay muted loop></video>
+    </div>
+    <a href="">
+      <img
+        src="./img/WhatsApp_Logo_PNG_Sem_Fundo_Original_Transparente-removebg-preview.png"
+        alt="link para o whatsapp"
+        class="logo-wpp"
+      />
+    </a>
+
+    <form
+      id="contact-us-form"
+      class="fale-conosco"
+      action="https://formcarry.com/s/7N5Qd3-vijw"
+      method="POST"
+      enctype="multipart/form-data">
+      <input placeholder="Seu nome" type="text" name="nome" id="name" />
+      <input placeholder="Seu telefone" type="tel" name="telefone" id="tel" />
+      <textarea placeholder="Digite seu problema aqui" name="duvida" id="problem"></textarea>
+      <button type="submit" class="btn-click btn-efeito">
+        Pedir Orçamento
+      </button>
+    </form>
+    <div class="mascara-form" onclick="sumirFormulario()"></div>
+  </body>
+  <script src="./script.js"></script>
+</html>
