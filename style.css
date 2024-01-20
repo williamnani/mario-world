@@ -6,12 +6,11 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
-    background-color: rgb(8, 8, 8);
-   
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(8, 8, 8);
 }
 
 .box-header {
@@ -126,19 +125,18 @@ img {
 .box-video {
   position: fixed;
   top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 
-video{
-   position: fixed;
-    top: 0;
-    min-height: 100%;
-    min-width: 100%;
-    opacity: 0.2;
+video {
+  position: fixed;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0.2;
 }
-
 
 .logo-wpp {
   width: 50px;
@@ -148,44 +146,101 @@ video{
   bottom: 20px;
 }
 
-.fale-conosco{
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 10px;
-    gap: 20px;
-    position: fixed;
-    left: -330px;
-    margin-top: 25vh;
-    transition: left 1s linear;
-    z-index: 99;
-    
+.fale-conosco {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+  position: fixed;
+  left: -330px;
+  margin-top: 25vh;
+  transition: left 1s linear;
+  z-index: 99;
 }
 
 input {
-    height: 40px;
-    border-radius: 3px;
-    border: 1px solid gray;
-    padding-left: 10px;
-    outline-color: chartreuse;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  padding-left: 10px;
+  outline-color: chartreuse;
 }
 
 textarea {
-    height: 90px;
-    width: 300px;
-    border-radius: 3px;
-    border: 1px solid gray;
-    padding: 10px;
-    outline-color: chartreuse;
+  height: 90px;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  padding: 10px;
+  outline-color: chartreuse;
 }
 
 .mascara-form {
-    visibility: hidden;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+  visibility: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
+}
+
+@media (max-width: 1200px) {
+  p {
+    display: none;
+  }
+
+  .box-principal {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 230px;
+  }
+
+  .btn-click {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box-2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -130px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-mario-luigi {
+    width: 95%;
+    height: 95%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .logo-header {
+    display: none;
+  }
+
+  .box-header {
+    justify-content: center;
+    right: 0;
+    left: 0;
+  }
 }
